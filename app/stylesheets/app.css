@@ -1,0 +1,170 @@
+
+*{
+  font-family: avenir, sans-serif;
+  color: white;
+}
+body{
+  margin: 0 auto;
+}
+/*template content*/
+nav{
+  height: 88px;
+  width:100vw;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  background-color: #3E3D41;
+}
+nav img{
+  padding: 24px;
+  height: 40px;width: 40px;
+  object-fit: contain;
+}
+  .logo{
+    margin: 24px;
+    height: 40px;
+    width: 80px;
+    background-image: url("/app/assets/ethereumLogo2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
+footer{
+  height: 66px;
+  width:100vw;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #3E3D41;
+}
+  .icon{
+    height: 30px;
+    height: 30px;
+    padding: 18px;
+  }
+
+.container{
+  height: calc(100vh - 150px);
+  margin-top: 86px;
+  background-color: #282C34;
+}
+
+/*Overview content*/
+.selection{
+  border-top:2px solid black;
+  background-color: #3E3D41;
+  width:100%;height:44px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.selection a{
+  text-decoration: none;
+}
+  .overview-menu:hover{
+    border-bottom: 3px solid #8290FA;
+  }
+  .overview-menu{
+    padding-top: 8px; padding-bottom: 8px;
+    height: 100%; width: 33%;
+    text-align: center;
+    height:24px;
+  }
+.picker{
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+  .arrow{
+    fill:white;
+    height: 18px;
+    margin-left: 20px;margin-right: 20px;
+  }
+.stats{
+  height: 70%;
+  /*border: 2px solid red;*/
+  margin-left: 10%;margin-right: 10%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows:60% 30% 10%;
+  grid-template-areas:
+  ".  c-l c-l c-l c-l c-l .  "
+  "C  C   C   .   E   E   E  "
+  "Ct Ct  Ct  .   Et  Et  Et "
+  ;
+  justify-content: center;
+}
+
+  .circle-lg{
+    width:230px;
+    height: 230px;
+    border-radius: 100%;
+    border: 6px solid aqua;
+    text-align: center;
+    align-self: center;
+
+    grid-area: c-l;
+  }
+  .circle-sm{
+    align-self: center;
+    margin-right: 5%;margin-left:5%;
+    width:113px;
+    height: 113px;
+    border-radius: 100%;
+    text-align: center;
+  }
+  .figure{
+    margin-top:33%;
+    font-size: 1.5em;
+  }
+  .amount{
+    margin-top:70px;
+    font-size: 3em;
+  }
+  .energy{
+    grid-area: E;
+    border: 6px solid orange;
+    }
+  .carbon{
+    grid-area: C;
+    border: 6px solid lime;
+  }
+  .title-energy{
+    grid-area: Et;
+  }
+  .title-carbon{
+    grid-area: Ct;
+  }
+  .title{
+    width: 100%;
+    text-align: center;
+  }
+  /*submit demo*/
+  .demo-data{
+    width: 50%;
+    margin: 0 auto;
+  }
+    .submit{
+      width: 100%;
+      border-radius: 80px;
+      height: 30px;
+      background-color: #8c88ff;
+      font-size:1.5em;
+      margin-top: 16px;
+    }
+    .data{
+      width: 100%;
+      height: 30px;
+      background-color: grey;
+      color: white;
+      font-size:1.5em;
+      border-style: none;
+    }
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: white;
+  }

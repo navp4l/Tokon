@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tokon</title>
+  <script src="./app.js"></script>
+</head>
+<body>
+<nav>
+  <div class="hamburger">
+    <img src="/app/assets/hamburger.png" alt="">
+  </div>
+  <div class="title">
+    <h2>Overview</h2>
+  </div>
+
+  <div class="logo">  </div>
+
+</nav>
+
+<div class="container">
+
+  <br/>
+
+  <div class="demo-data">
+    <input class="data" type="text" name="data" id="promoCode">
+    <button class="submit" type="button" name="button" id="send" onclick="App.createPromo()">Add Promo</button>
+
+    <br/>
+    <br/>
+    <br/>
+
+    <input class="data" type="text" name="data" id="promoCodeForDetails" value="">
+    <button class="submit" type="button" name="button" id="getPromoDetails" onclick="App.getPromoDetails()">Get Details</button>
+
+    <br/>
+    <br/>
+
+    <p>PromoCode: <span id="promoCodeDisplay"></span></p>
+    <p>Promo Inventory: <span id="promocurrentInventoryDisplay"></span></p>
+    <p>Promo Credit: <span id="promoCreditDisplay"></span></p>
+
+    <br/>
+    <br/>
+
+  </div>
+
+  <br/>
+  <br/>
+  <br/>
+
+  <div align="center">
+    <span id="status"></span>
+  </div>
+
+</div>
+
+<footer>
+  <div class="icon calendar"></div>
+  <div class="icon stats-overview"></div>
+  <div class="icon stats-current"></div>
+  <div class="icon placeholder-1"></div>
+  <div class="icon placeholder-2"></div>
+</footer>
+</body>
+</html>

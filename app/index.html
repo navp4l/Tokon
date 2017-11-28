@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tokon</title>
+  <script src="./app.js"></script>
+</head>
+<body>
+<nav>
+  <div class="hamburger">
+    <img src="/app/assets/hamburger.png" alt="">
+  </div>
+  <div class="title">
+    <h2>Overview</h2>
+  </div>
+
+  <div class="logo">  </div>
+
+</nav>
+<div class="container">
+
+  <div class="container" align="center">
+
+    <br/>
+
+    <img src="/app/assets/QRCode.png" alt="QR code" height="182" width="142">
+
+    <br/>
+
+    <p>Unique PROMO code : PROMO_001</p>
+
+    <p>Public key of the retailer : 0x2cdd5eebe58eff29d0cca2971cdddc9fb941faa4</p>
+
+    <p>Has user redeemed promo: <span id="ispromoRedeemed"></span></p>
+
+    <p>Remaining promo redemptions: <span id="remainingPromoRedemption"></span></p>
+
+*************************************************
+    <br/>
+    <br/>
+
+    <div class="demo-data">
+
+    <button class="submit" type="button" name="button" id="redeemPromotion" onclick="App.redeemPromo()">Redeem Coupon</button>
+
+    </div>
+
+    <br/>
+
+    <br/>
+    <span id="status"></span>
+
+  </div>
+
+</div>
+
+
+
+<footer>
+  <div class="icon calendar"></div>
+  <div class="icon stats-overview"></div>
+  <div class="icon stats-current"></div>
+  <div class="icon placeholder-1"></div>
+  <div class="icon placeholder-2"></div>
+</footer>
+</body>
+</html>
